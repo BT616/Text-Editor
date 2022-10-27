@@ -1,0 +1,8 @@
+{
+  "name": "Text Editor",
+  "short_name": "PWA",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./",
+  "description": "Less is more Text Editor"
+}
