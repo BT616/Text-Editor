@@ -22,7 +22,6 @@
 
 
 
-  MIT
   
 
  ## License
