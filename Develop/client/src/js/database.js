@@ -14,11 +14,10 @@ const initdb = async () =>
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {console.error('putDb not implemented');
-
 const jateDb = await openDB('jate',1);
 const tx = jateDb.transaction('jate','readwrite');
 const store = tx.objectStore('jate');
-const request = store.put({jate:content});
+const request = store.put({id: 1, value:content});
 const result = await request;
 }
 
@@ -28,7 +27,7 @@ export const getDb = async () => {
   const jateDb = await openDB('jate',1);
   const tx = jateDb.transaction('jate','readonly');
   const store = tx.objectStore('jate');
-  const request = store.get({jate:content});
+  const request = store.getAll();
   const result = await request;
   return result;
 
